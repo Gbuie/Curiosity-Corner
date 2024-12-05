@@ -1,0 +1,28 @@
+.footer {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #ccc;
+  }
+  
+  .footer-container {
+    max-width: 800px; /* Restrict footer width */
+    margin: 0 auto;
+  }
+  
+  .footer-logo img {
+    max-width: 120px; /* Adjust logo size */
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+  }
+  

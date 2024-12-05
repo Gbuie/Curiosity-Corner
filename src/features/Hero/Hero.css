@@ -1,0 +1,27 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.heroImg{
+width: 100%;
+}
+
+.hero-button {
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+ background-color: var(--primary-color); /* Example button color */
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-button:hover {
+  background-color: var(--secondary-color); /* Button hover effect */
+}

@@ -1,0 +1,138 @@
+/* General Section Styling */
+.featured-section,
+.five-and-under-section,
+.ages-six-to-eight-section,
+.ages-nine-to-twelve-section {
+  margin: 20px auto;
+  padding: 0; /* Adjusted padding to 0 */
+  text-align: left;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/* Category Title */
+.category-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+  font-family: "Fredoka", sans-serif;
+  font-weight: 300;
+}
+
+/* Carousel Container */
+.book-carousel {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Added margin for spacing */
+}
+
+/* Swiper Slide Styling */
+.book-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.book-slide:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Book Image Styling */
+.book-image {
+  width: 150px;
+  height: 200px; /* Adjusted height for better proportions */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 5px 2px 8px rgba(103, 103, 103, 0.559);
+  border: 1px solid rgb(41, 41, 41);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 8px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Book Info Styling */
+.book-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.book-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.book-author {
+  font-size: 0.875rem;
+  color: var(--secondary-color);
+}
+
+/* Specific Section Title Styling */
+.ages-nine-to-twelve-section h2,
+.ages-six-to-eight-section h2,
+.five-and-under-section h2,
+.featured-section h2 {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+/* Swiper Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--primary-color);
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: var(--tertiary-color);
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+  background: var(--secondary-color);
+  transition: background 0.3s ease; /* Smooth transition */
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--tertiary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .book-image {
+    width: 120px; /* Smaller image size for tablets */
+    height: 160px;
+  }
+
+  .book-title {
+    font-size: 0.875rem; /* Smaller title font */
+  }
+
+  .book-author {
+    font-size: 0.75rem; /* Smaller author font */
+  }
+}
+
+@media (max-width: 480px) {
+  .book-image {
+    width: 100px; /* Smaller image size for mobile */
+    height: 140px;
+  }
+
+  .book-title {
+    font-size: 0.8rem; /* Further reduced title font */
+  }
+
+  .book-author {
+    font-size: 0.7rem; /* Further reduced author font */
+  }
+}

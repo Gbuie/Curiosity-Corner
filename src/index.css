@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: 'LazyDog';
+  src: url('/assets/fonts/lazy_Dog.woff2') format('woff2'),
+       url('/assets/fonts/lazy_Dog.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AdigianaUI';
+  src: url('/assets/fonts/adigianaUI.woff2') format('woff2'),
+       url('/assets/fonts/adigianaUI.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

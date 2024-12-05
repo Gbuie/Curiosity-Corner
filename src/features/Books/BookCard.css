@@ -1,0 +1,22 @@
+.book-card {
+  width: 220px; /* Set consistent width */
+  padding: 10px;
+  border: none; /* Optional: Remove borders for a cleaner look */
+  text-align: center;
+}
+
+.book-thumbnail {
+  width: 100%; /* Make the image fill the card */
+  border-radius: 8px;
+}
+
+.book-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.book-authors {
+  font-size: 0.9rem;
+  color: #555;
+}
