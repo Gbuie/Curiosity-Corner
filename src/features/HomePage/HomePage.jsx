@@ -52,7 +52,7 @@ function HomePage() {
 
   return (
     <>
-    <Nav />
+    <Nav showLogo={true} />
       <Hero />
       <SearchBar onSearch={handleSearch} />
       {searchQuery ? (

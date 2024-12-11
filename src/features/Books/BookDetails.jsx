@@ -3,8 +3,8 @@ import { useParams,  } from "react-router-dom";
 import Footer from "../Footer/Footer.jsx";
 import "./BookDetails.css";
 import "../../Shared/styles/global.css";
+import HeaderLong from "../../assets/images/headerLong.png"
 import Nav from "../Nav/Nav.jsx";
-import Hero from "../Hero/Hero.jsx";
 
 const BookDetail = () => {
   const { id } = useParams();
@@ -53,35 +53,48 @@ const BookDetail = () => {
 
   return (
     <>
-      <Nav />
-
-       
-        <Hero />
-     
+      <header className="book-detail-header">
+        <img src={HeaderLong} alt="Header Image" className="header-long" />
+      
+      </header>
+      <Nav showLogo={false} />
 
       <main className="book-detail-container">
-        {/* Book Details Content */}
         <img
           src={book.image}
           alt={book.title || "Book cover"}
           className="book-detail-image"
         />
-        <div className="book-detail-content">
+
+        {/* First Box: Title, Author, Summary */}
+        <div className="info-box-1">
           <h1 className="book-detail-title">{book.title}</h1>
           <h3 className="book-detail-author">By: {book.authors.join(", ")}</h3>
           <p className="book-detail-description">{book.description}</p>
-          <p className="book-detail-category">
-            <strong>Category:</strong> {book.category}
-          </p>
-          <p className="book-detail-publisher">
-            <strong>Publisher:</strong> {book.publisher}
-          </p>
-          <p className="book-detail-published-date">
-            <strong>Published Date:</strong> {book.publishedDate}
-          </p>
-          <p className="book-detail-page-count">
-            <strong>Page Count:</strong> {book.pageCount}
-          </p>
+        </div>
+
+        {/* Second Box: YouTube Read-Along Link */}
+        <div className="info-box-2">
+          <h2>Watch Read-Along</h2>
+          <a href={`https://www.youtube.com/results?search_query=${encodeURIComponent(book.title + " read along")}`} target="_blank" rel="noopener noreferrer">
+            Click here for a read-along on YouTube
+          </a>
+        </div>
+
+        {/* Third Box: Reader Reviews */}
+        <div className="info-box-3">
+          <h2>Reader Reviews</h2>
+         <div className="review">🌟🌟🌟🌟🌟
+My kids absolutely love Curiosity Corner! The vibrant layout and easy navigation keep them engaged, and the book recommendations are spot-on for their reading levels. It a joy to see them so excited about reading!
+– Sarah L., Parent of Two</div>
+<div className="review 2">🌟🌟🌟🌟🌟
+Curiosity Corner is a game-changer for young readers! My 8-year-old found her new favorite series here, and the videos add a fun, interactive element to the experience. Highly recommend for curious minds!
+– David M., Educator</div>
+<div className="review 3">🌟🌟🌟🌟🌟
+This virtual library is AMAZING! The selection of books is diverse, and the design is so kid-friendly. As a homeschooling mom, I appreciate the mix of entertainment and educational resources. My kids adore it!
+– Jessica R., Homeschooling Parent</div>
+
+      
         </div>
       </main>
       <Footer />

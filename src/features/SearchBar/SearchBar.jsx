@@ -16,6 +16,8 @@ const SearchBar = ({ onSearch, subText, additionalText }) => {
 
   return (
     <div className="search-bar-container">
+      <div className="search-bar-text">Discover a World of Books and Audiobooks</div>
+      <div className="search-bar-subtext">Any reading level, anytime, anywhere – spark your childs love for reading.</div>
       {/* Display the optional subText */}
       {subText && <p className="search-bar-subtext">{subText}</p>}
 
@@ -28,9 +30,9 @@ const SearchBar = ({ onSearch, subText, additionalText }) => {
           value={inputValue}
           onChange={handleInputChange}
         />
-        <button type="submit" className="search-button">
+        {/* <button type="submit" className="search-button">
           Search
-        </button>
+        </button> */}
       </form>
 
       {/* Additional optional text */}

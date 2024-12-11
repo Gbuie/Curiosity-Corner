@@ -1,22 +1,25 @@
 /* Header Styling */
 .book-detail-header {
   position: relative;
-  text-align: center;
-  margin-bottom: 20px;
+display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.header-image {
+.header-long {
   width: 100%;
-  height: auto;
-  max-height: 300px;
+  height: auto; /* Adjusted height */
   object-fit: cover;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 4px solid #ffffff;
 }
 
-.book-detail-navbar {
+.book-detail-nav {
+  display: none;
+  justify-content: center;
+  width: 100%;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  z-index: 1;
 }
 
 .nav-list {
@@ -25,6 +28,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  ;
 }
 
 .nav-link {
@@ -42,15 +46,15 @@
 }
 
 /* Book Detail Main Section */
-.book-detail-container {
+/* .book-detail-container {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
   background-color: #ffffff;
-  border: 1px solid #ddd;
+  border: 5px dotted #38b6ff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .book-detail-image {
   width: 100%;
@@ -59,18 +63,21 @@
   border-radius: 10px;
   margin: 20px auto;
   display: block;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 4px 10px #65656558;
 }
 
 .book-detail-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--primary-color);
-  margin-bottom: 10px;
+  margin-bottom: -10px;
 }
 
 .book-detail-author {
   font-size: 1.2rem;
   color: var(--secondary-color);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-family: comfortaa,cursive;
 }
 
 .book-detail-description,
@@ -82,4 +89,42 @@
   color: #333;
   margin-bottom: 10px;
   line-height: 1.5;
+}
+
+.info-box-1 {
+  border: 3px dotted var(--primary-color); /* Example border color */
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #f9f9f9; /* Light background for contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.info-box-2 {
+  border: 3px dotted var(--secondary-color); /* Example border color */
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #f9f9f9; /* Light background for contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.info-box-3 {
+  border: 3px dotted#24c400; /* Example border color */
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #f9f9f9; /* Light background for contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.info-box h1,
+.info-box h2,
+.info-box h3 {
+  margin: 0 0 10px; /* Adjust margin for headings */
+}
+
+.info-box a {
+  color: var(--primary-color);
+  text-decoration: underline;
 }

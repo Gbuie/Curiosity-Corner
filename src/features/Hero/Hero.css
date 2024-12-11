@@ -4,24 +4,43 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+  margin-top: -50px; /* Move closer to the navbar by reducing margin */
+  padding: 0 10px; /* Reduce vertical padding but keep horizontal spacing */
+  width: 100%; /* Ensure full width */
+  max-width: 1200px; /* Adjust for a slightly wider hero section */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto;
 }
-.heroImg{
-width: 100%;
+
+.heroImg {
+  width: 100%;
+  height: auto; /* Automatically adjust height based on width */
+  object-fit: cover; /* Ensures the image covers the container proportionally */
 }
 
 .hero-button {
   width: 200px;
   height: 50px;
   font-size: 18px;
- background-color: var(--primary-color); /* Example button color */
-  color: white;
+  background-color: var(--primary-color); /* Example button color */
+  color: #fff; /* Ensure text is white */
   cursor: pointer;
   position: absolute;
-  bottom: 5%;
+  bottom: 5%; /* Adjust button closer to the bottom */
   left: 50%;
   transform: translateX(-50%);
+  border: none;
+  border-radius: 5px; /* Add a slight curve for better aesthetics */
 }
 
 .hero-button:hover {
   background-color: var(--secondary-color); /* Button hover effect */
+}
+
+/* Add this new class for the homepage */
+.homepage .nav-menu {
+  position: absolute; /* Positioning it absolutely */
+  top: 0; /* Align to the top */
+  right: 0; /* Align to the right */
+  margin: 20px; /* Optional: Add some margin */
 }

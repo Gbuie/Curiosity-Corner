@@ -1,0 +1,84 @@
+.library-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dropdowns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .dropdowns select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdowns select:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .books-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ensures responsive grid with at least 150px per item */
+    gap: 20px; /* Adds space between grid items */
+  }
+  
+  .book-item {
+    position: relative;
+    width: 100%; /* Ensures the item fills the grid cell */
+    padding-top: 100%; /* Makes the height proportional to the width (1:1 aspect ratio for perfect square) */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    overflow: hidden; /* Ensures content stays inside the square */
+  }
+  
+  .book-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image scales proportionally */
+    border-radius: 8px;
+  }
+  
+  .book-item h2 {
+    position: absolute;
+    bottom: 30px; /* Space above author */
+    left: 0;
+    right: 0;
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.8); /* Adds a semi-transparent background */
+    padding: 5px 0;
+  }
+  
+  .book-item p {
+    position: absolute;
+    bottom: 5px; /* Place the author at the very bottom */
+    left: 0;
+    right: 0;
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Adds a semi-transparent background */
+    padding: 5px 0;
+  }
+  
+  .footer{
+    width:auto;
+    border:1px solid white;
+  }
